@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>client List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th>name</th>
+              <th>idClient</th>
+              <th>email</th>
+              <th>secaccount</th>
+              <th>cashaccount</th>
+              <th>Actions</th>
+
+             
+              
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let client of clients | async">
+            <td>{{client.idSecAccount}}</td>
+            <td>{{client.idClient}}</td>
+            <td>{{client.idCashAccount}}</td>
+            <td>{{client.email}}</td>
+            <td>{{client.name}}</td>
+           
+            <td><button (click)="deleteClient(client.id)" class="btn btn-danger">Delete</button>
+                <button (click)="clientDetails(client.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

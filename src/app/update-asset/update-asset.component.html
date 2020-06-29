@@ -1,0 +1,29 @@
+<h3>Update Assetasset</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Isin</label>
+      <input type="text" class="form-control" id="Isin" required [(ngModel)]="asset.Isin" name="Isin">
+    </div>
+    <div class="form-group">
+        <label for="name">instrument</label>
+        <input type="text" class="form-control" id="instrument" required [(ngModel)]="asset.instrument" name="instrument">
+      </div>
+
+    <div class="form-group">
+      <label for="name">settelmentplace</label>
+      <input type="text" class="form-control" id="settelmentplace" required [(ngModel)]="asset.settelmentplace" name="settelmentplace">
+    </div>
+
+    <div class="form-group">
+      <label for="name">nostrosecacc</label>
+      <input type="text" class="form-control" id="nostrosecacc" required [(ngModel)]="asset.nostrosecacc" name="nostrosecacc">
+    </div>
+    <div class="form-group">
+        <label for="name">nostrocashacc</label>
+        <input type="text" class="form-control" id="nostrocashacc" required [(ngModel)]="asset.nostrocashacc" name="nostrochashacc">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<h2>Client Details</h2> 
+
+<hr/>
+  <div *ngIf="client">
+    <div>
+        <label><b>name</b></label> {{client.name}}
+      </div>
+      <div>
+        <label><b> idClient </b></label>{{client.idClient}}
+      </div>
+      <div>
+        <label><b>email </b></label> {{client.email}}
+      </div>
+      <div>
+        <label><b>idSecAccount </b></label> {{client.idSecAccount}}
+      </div>
+      <div>
+        <label><b> idCashAccount  </b></label> {{client.idCashAccount}}
+      </div>
+  </div>
+      <br>
+      <br>
+      <button (click)="list()" class="btn btn-primary">Back to Client List</button><br>
