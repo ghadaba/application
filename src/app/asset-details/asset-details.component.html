@@ -1,1 +1,24 @@
-<p>asset-details works!</p>
+<h2>Asset Details</h2> 
+
+<hr/>
+<div *ngIf="asset">
+  <div>
+    <label><b>Isin </b></label> {{asset.Isin}}
+  </div>
+  <div>
+    <label><b>instrument </b></label> {{asset.instrument}}
+  </div>
+  <div>
+    <label><b>settelmentplace </b></label> {{asset.settelmentplace}}
+  </div> 
+  <div>
+    <label><b>nostrosecacc </b></label> {{asset.nostrosecacc}}
+  </div> 
+  <div>
+    <label><b>nostrocashacc </b></label> {{asset.nostrocashacc}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Asset List</button><br>

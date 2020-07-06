@@ -1,7 +1,7 @@
 import { TransactionType } from './TransactionType';
 
 export class Instruction {
-  id: number;
+   id: number;
     secacc: number;
     id_client: number;
     id_transaction: number;
@@ -15,3 +15,4 @@ export class Instruction {
     transactionType: TransactionType;
     active: boolean;
 }
+

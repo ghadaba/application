@@ -12,10 +12,10 @@ import { InstructionListComponent } from './instruction-list/instruction-list.co
 import { CreateInstructionComponent } from './create-instruction/create-instruction.component';
 import { UpdateAssetComponent } from './update-asset/update-asset.component';
 import { UpdateInstructionComponent } from './update-instruction/update-instruction.component';
-import { CreateClientComponent } from './create-client/create-client.component';
-import { ClientDetailsComponent } from './client-details/client-details.component';
-import { ClientListComponent } from './client-list/client-list.component';
-import { UpdateClientComponent } from './update-client/update-client.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +28,10 @@ import { UpdateClientComponent } from './update-client/update-client.component';
     CreateInstructionComponent,
     UpdateAssetComponent,
     UpdateInstructionComponent,
-    CreateClientComponent,
-    ClientDetailsComponent,
-    ClientListComponent,
-    UpdateClientComponent
+    CreateUserComponent,
+    UserDetailsComponent,
+    UserListComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,

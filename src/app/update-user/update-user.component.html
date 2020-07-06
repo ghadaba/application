@@ -1,0 +1,15 @@
+<h3>Update User</h3>
+<div style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">nom</label>
+      <input type="text" class="form-control" id="nom" required [(ngModel)]="user.nom" name="nom">
+    </div>
+    
+    <div class="form-group">
+        <label for="name">prenom</label>
+        <input type="text" class="form-control" id="prenom" required [(ngModel)]="user.prenom" name="prenom">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

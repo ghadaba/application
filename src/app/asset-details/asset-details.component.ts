@@ -5,7 +5,8 @@ import { AssetListComponent } from '../asset-list/asset-list.component';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-asset-details',
+  
+  selector: 'app-asset-details' ,
   templateUrl: './asset-details.component.html',
   styleUrls: ['./asset-details.component.css']
 })
