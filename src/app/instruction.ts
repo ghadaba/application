@@ -3,12 +3,12 @@ import { TransactionType } from './TransactionType';
 export class Instruction {
    id: number;
     secacc: number;
-    id_client: number;
-    id_transaction: number;
+    idclient: number;
+    idtransaction: number;
     instrument: string;
     quantity: number;
     price : number;
-    Id_currency: number;
+    Idcurrency: number;
     Isin: string;
     tradeDate: Date;
     settlementDate: Date;

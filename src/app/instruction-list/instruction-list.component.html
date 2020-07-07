@@ -24,20 +24,20 @@
       <tbody>
         <tr *ngFor="let instruction of instructions | async">
           <td>{{instruction.secacc}}</td>
-          <td>{{instruction.id_client}}</td>
-          <td>{{instruction.id_transaction}}</td>
+          <td>{{instruction.idclient}}</td>
+          <td>{{instruction.idtransaction}}</td>
           <td>{{instruction.instrument}}</td>
           <td>{{instruction.quantity}}</td>
           <td>{{instruction.price}}</td>
-          <td>{{instruction.Id_currency}}</td>
+          <td>{{instruction.Idcurrency}}</td>
           <td>{{instruction.Isin}}</td>
           <td>{{instruction.tradeDate}}</td>
           <td>{{instruction.settlementDate}}</td>
           <td>{{instruction.transactionType}}</td>
          
           <td><button (click)="deleteInstruction(instruction.id)" class="btn btn-danger">Delete</button>
-              <button (click)="instructionDetails(instruction.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
-          </td>
+            <button (click)="Updateinstruction(instruction.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            </td>
         </tr>
       </tbody>
     </table>

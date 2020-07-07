@@ -1,6 +1,6 @@
-import { InstructionService } from '../instruction.service';
-import { Instruction } from '../instruction';
 import { Component, OnInit } from '@angular/core';
+import { Instruction } from 'src/app/instruction';
+import { InstructionService } from 'src/app/instruction.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-instruction.component.css']
 })
 export class CreateInstructionComponent implements OnInit {
-
-  instruction: Instruction = new Instruction();
-  submitted = false;
-
-  constructor(private instructionService: InstructionService,
+instruction : Instruction = new Instruction() ; 
+submitted = false;
+  constructor(private InstructionService: InstructionService,
     private router: Router) { }
 
   ngOnInit() {
@@ -23,20 +21,19 @@ export class CreateInstructionComponent implements OnInit {
     this.submitted = false;
     this.instruction = new Instruction();
   }
-
   save() {
-    this.instructionService.createInstruction(this.instruction)
+    this.InstructionService.createInstruction(this.instruction)
       .subscribe(data => console.log(data), error => console.log(error));
     this.instruction = new Instruction();
     this.gotoList();
   }
-
   onSubmit() {
     this.submitted = true;
     this.save();    
   }
-
   gotoList() {
     this.router.navigate(['/instructions']);
   }
+
 }
+

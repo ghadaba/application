@@ -34,11 +34,9 @@ export class InstructionListComponent implements OnInit {
         error => console.log(error));
   }
 
-  instructionDetails(id: number){
-    this.router.navigate(['details', id]);
-  }
+  
 
-  updateInstruction(id: number){
-    this.router.navigate(['update', id]);
+  Updateinstruction(id: number){
+    this.router.navigate(['update-instruction', id]);
   }
 }

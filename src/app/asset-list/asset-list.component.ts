@@ -34,7 +34,7 @@ export class AssetListComponent implements OnInit {
         error => console.log(error));
   }
 
-  assetDetails(id: number){
-    this.router.navigate(['details', id]);
+  Updateasset(id: number){
+    this.router.navigate(['update-asset', id]);
   }
 }
